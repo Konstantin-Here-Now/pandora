@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <br><br><br>
+    <link href="{{ url_for('static', filename='css/contacts.css') }}" rel="stylesheet">
+    <div class="container" style="text-align: center">
+        <h1>Свяжитесь с нами!</h1>
+        <div>
+            <img class="icon" src="{{ url_for('static', filename='images/contacts/phone.png') }}" alt="phone"><a href="tel:{{ context.phone }}">{{ context.phone }}</a>
+            <br>
+            <img class="icon" src="{{ url_for('static', filename='images/contacts/email.png') }}" alt="email"><a href="mailto:{{ context.email }}">{{ context.email }}</a>
+        </div>
+    </div>
+{% endblock %}

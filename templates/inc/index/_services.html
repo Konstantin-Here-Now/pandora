@@ -1,0 +1,36 @@
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+
+
+<div class="container">
+    <h1>Наши перевозки</h1>
+    <div class="wrapper">
+        <div class="imgblock">
+            <a href="{{ url_for('service', name='see') }}">
+                <img src="{{ url_for('static', filename='images/services/see.jpg') }}"
+                     alt="{{ context.services.see.name }}">
+                <span class="spec__sign">{{ context.services.see.name }}</span>
+            </a>
+        </div>
+        <div class="imgblock">
+            <a href="{{ url_for('service', name='railway') }}">
+                <img src="{{ url_for('static', filename='images/services/railway.jpg') }}"
+                     alt="{{ context.services.railway.name }}">
+                <span>{{ context.services.railway.name }}</span>
+            </a>
+        </div>
+        <div class="imgblock">
+            <a href="{{ url_for('service', name='air') }}">
+                <img src="{{ url_for('static', filename='images/services/air.jpg') }}"
+                     alt="{{ context.services.air.name }}">
+                <span class="spec__sign">{{ context.services.air.name }}</span>
+            </a>
+        </div>
+        <div class="imgblock">
+            <a href="{{ url_for('service', name='truck') }}">
+                <img src="{{ url_for('static', filename='images/services/truck.jpg') }}"
+                     alt="{{ context.services.truck.name }}">
+                <span>{{ context.services.truck.name }}</span>
+            </a>
+        </div>
+    </div>
+</div>

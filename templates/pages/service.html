@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 style="font-size: 48px">{{ context.name }}</h1>
+        <br><br><br>
+        <div class="row">
+            <div class="col-8"><img src="{{ context.url_for }}" style="width: 800px"></div>
+            <div class="col-4" style="font-size: 20px">
+                {% if context.desc is string %}
+                    {{ context.desc }}
+                {% else %}
+                    {% for point in context.desc %}
+                        <p>• {{ point }}</p>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
