@@ -1,0 +1,55 @@
+.services-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 48px;
+    margin-top: 3px;
+    height: 100%;
+    overflow-x: hidden;
+    padding-top: 15px;
+}
+
+a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.imgblock {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imgblock img{
+    transition: 1s;
+}
+
+.imgblock img:hover {
+    transform: scale(1.2);
+}
+
+.imgblock span {
+    background: rgba(0,0,0,0.7);
+    background: #222;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+
+
